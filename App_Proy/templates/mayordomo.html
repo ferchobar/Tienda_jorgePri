@@ -1,0 +1,41 @@
+{% extends 'Plantilla_menu.html' %}
+
+           
+    {% block Contenido %}
+            <!--<table border="2" class="table table-bordered">-->
+            <!--<table id="myTable" class="display">-->
+            <!--<table class="table table-dark table-striped-columns"> -->
+            <table id="example" class="table table-striped" style="width:100%">
+             <thead>
+                <colgroup span="2" class="fondo"></colgroup>
+                
+                <caption>Listado de {{ titulo }} </caption>
+                <tr>
+                    <th>{{ col0 }}</th> 
+                    <th>{{ col1 }}</th>
+                    <th>{{ col2 }}</th>
+                    <th>{{ col3 }}</th>
+                    <th>{{ col4 }}</th>
+                </tr>
+                </thead>
+              <tbody>  
+        {% block content %}
+
+        {% endblock %}
+    </tbody>
+        <tfoot>
+            <tr>
+            <tr>
+            <th>{{ col0 }}</th> 
+            <th>{{ col1 }}</th>
+            <th>{{ col2 }}</th>
+            <th>{{ col3 }}</th>
+            <th>{{ col4 }}</th>
+            </tr>
+            </tr>
+        </tfoot>
+             
+            </table> 
+    {% endblock %}
+
+   

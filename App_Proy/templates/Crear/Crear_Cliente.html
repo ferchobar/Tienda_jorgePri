@@ -1,0 +1,29 @@
+{% extends 'mayordomo.html' %}
+
+{% block head  %}
+
+
+{% endblock %}
+
+{% block Contenido %}
+
+                <h2>{{ Titulo }}</h2>
+<TABLE>
+                <form action="." method="POST">
+                    <p> 
+                        {% csrf_token %}
+                        <td> {{ form }}</p></td>
+            
+                    </p>
+                    <p>
+                        <tr>
+                            <td><button type ="submit" class="btn primary">Guardar</button></td>
+                            <td><button type ="reset" class="btn primary">Borrar</button></td>
+                        </tr>
+                    </p>
+                    </TR>
+                    </p>
+</TABLE>                                   
+                  </form>
+                
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'mayordomo.html' %}
+{% block head  %}
+    
+{% endblock %}
+{% block content %}
+ 
+    {% if object_list %}
+        {% for ingreso_producto in object_list %}
+                                                                                            
+            <tr><td>{{ ingreso_producto.id_ingreso }} </td><td>{{ ingreso_producto.producto  }}</td><td> {{ingreso_producto.add_Cantidad_producto}}</td><td> {{ ingreso_producto.fecha_add }} </td><td> {{ingreso_producto.nombre_alimentador}}</td></tr>
+
+        {% endfor %}
+    {% else %}
+    <h4> No hay Inventario Adquiridos </h4>
+    {% endif %}
+{% endblock %}

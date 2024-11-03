@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Jorge</title>
+  <link rel="stylesheet" media="all" href='{% static "css/style1.css" %}' />
+  
+</head>
+<body>
+<header>UNA TIENDA PARA TODOS</header>
+
+<article>
+  <h3>Clientes</h3>
+  <section>
+    <p>Guarda los datos de tus clientes</p><a href= "/mostrarCli"> Clientes </a>
+  </section>
+</article>
+
+<article>
+  <h3>Productos</h3>
+  <section>
+    <p>Productos de venta en la institución</p><a href= "/mostrarPro"> Productos</a>
+  </section>
+</article>
+
+<article>
+  <h3>Ventas</h3>
+  <section>
+    <p>Crea y consulta las Ventas</p><a href= "/mostrarVen"> Ventas </a>
+  </section>
+</article>
+
+<article>
+  <h3>Inventario</h3>
+  <section>
+    <p>Alimenta el Inventario de Productos</p><a href="/muestra_inventario">Inventario</a>
+  </section>
+</article>
+
+</body>
+</html>

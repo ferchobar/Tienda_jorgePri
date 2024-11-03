@@ -1,0 +1,14 @@
+{% extends 'Plantilla_menu.html' %}
+
+{% block content %}
+
+    <ul> 
+         Id / Cliente / Fecha / Vendedor
+        {% for Ingreso_Prod1 in Ingreso_Prod %}
+        <li>
+            {{ Ingreso_Prod1.id_ingreso }} / {{ Ingreso_Prod1.producto }} / {{ Ingreso_Prod1.add_Cantidad_producto }} / {{ Ingreso_Prod1.fecha_add }} / {{Ingreso_Prod1.nombre_alimentador}} 
+   
+        </li>
+        {% endfor %}
+    </ul>     
+{% endblock %}

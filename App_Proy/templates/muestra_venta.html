@@ -1,0 +1,13 @@
+{% extends 'mayordomo.html' %}
+
+{% block content %}
+
+{% if object_list  %}
+                
+        {% for venta in object_list %}
+        <tr><td> {{ venta.id_venta }} </td><td>  {{ venta.cliente }} </td><td>  {{ venta.fecha_venta }} </td><td>  {{ venta.nombre_vendedor }} </td></tr>
+        {% endfor %}
+        {% else %}
+         <h4>   No hay Ventas guardados en la base de datos del sistema </h4>
+        {%endif%}
+{% endblock %}

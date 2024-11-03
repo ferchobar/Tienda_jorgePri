@@ -1,0 +1,16 @@
+{% extends 'mayordomo.html' %}
+{% block head  %}
+    
+{% endblock %}
+{% block content %}
+ 
+    {% if object_list %}
+        {% for carrito_venta in object_list %}
+    
+            <tr><td>{{ carrito_venta.id_carrito_ventas }} </td><td>{{ carrito_venta.venta  }}</td><td> {{carrito_venta.producto}}</td><td> {{ carrito_venta.unidades_vendidas }} </td><td> {{carrito_venta.precio}}</td></tr>
+
+        {% endfor %}
+    {% else %}
+    <h4> No hay Productos Vendidos </h4>
+    {% endif %}
+{% endblock %}
